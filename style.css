@@ -37,3 +37,33 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.play-area{
+    border: 3px solid black;
+    display: flex;
+    height: 40vh;
+    width: 80%;
+    margin: auto;
+}
+.player-choice{
+    border: 3px solid red;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.comp-choice{
+    border: 3px solid blue;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    border: 2px solid black;
+    height:50%;
+    width: 50%;
+}
