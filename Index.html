@@ -8,17 +8,26 @@
 </head>
 <body>
     <section class="play-area">
-        <div class="player-side">
+        <div class="player-choice">
+            <p class="p-text">Player</p>
+            <div class="icon">
 
+            </div>
         </div>
-        <div class="ai-side">
-            
+        <div class="comp-choice">
+            <p class="comp-text">Computer</p>
+            <div class=icon>
+
+            </div>
         </div>
     </section>
+    <h1 class="choose">Choose: </h1>
     <section class="buttons">
-        <button onclick="chooseHand('rock')"></button>
-        <button onclick="chooseHand('paper')"></button>
-        <button onclick="chooseHand('scissors')"></button>
+        <div class="rps-flex-parent">
+        <button class="rock btn" onclick="chooseHand('rock')"></button>
+        <button class="paper btn" onclick="chooseHand('paper')"></button>
+        <button class="scissors btn" onclick="chooseHand('scissors')"></button>
+        </div>
     </section>
     <section class="score">
         <p>Player score: <span class="player-score">0</span></p>

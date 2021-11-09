@@ -4,8 +4,8 @@ var tieScore = 0;
 var playerOption = "";
 var aiOption = "";
  
-var playerSide = $(".player-side");
-var aiSide = $(".ai-side");
+var playerSide = $(".player-choice .icon");
+var aiSide = $(".ai-choice .icon");
 
 function chooseHand(choice) {
     if(choice == 'rock') {
