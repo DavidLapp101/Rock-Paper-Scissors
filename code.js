@@ -3,22 +3,15 @@ var aiScore = 0;
 var tieScore = 0;
 var playerOption = "";
 var aiOption = "";
+var winnerMessage = "";
  
 var playerSide = $(".player-choice .icon");
-var aiSide = $(".ai-choice .icon");
+var aiSide = $(".comp-choice .icon");
 
 function chooseHand(choice) {
-    if(choice == 'rock') {
-        playerSide.html(`<img src="images/${choice}.png" alt="">`);
-    }
-    else if(choice == 'paper') {
-        playerSide.html(`<img src="images/${choice}.png" alt="">`);
-    }
-    else {
-        playerSide.html(`<img src="images/${choice}.png" alt="">`);
-    }
-
+    playerSide.html(`<img src="images/${choice}.png" alt="">`);
     playerOption = choice;
+    
     aiChoice();
 }
 
@@ -38,10 +31,10 @@ function aiChoice() {
         aiOption = 'scissors';
     }
 
-    cleanUp();
+    displayWinner();
 }
 
-function cleanUp() {
+function displayWinner() {
     if(playerOption == aiOption) {
         tieScore++;
         $(".tie-score").html(tieScore);
