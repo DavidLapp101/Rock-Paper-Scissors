@@ -95,6 +95,8 @@ body{
 .all-scores{
     display: flex;
     justify-content: space-around;
+    padding-top: 2%;
+    font-size: 1.2rem;
 }
 .reset-btn{
     border: 2px solid black;
