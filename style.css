@@ -43,9 +43,10 @@ body{
     height: 40vh;
     width: 80%;
     margin: auto;
+    border-radius: 15px;
 }
 .player-choice{
-    width: 50%;
+    width: 40%;
     height: 100%;
     text-align: center;
     font-size: 2rem;
@@ -53,8 +54,12 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.winner-message{
+    width: 20%;
+    height: 100%;
+}
 .comp-choice{
-    width: 50%;
+    width: 40%;
     height: 100%;
     text-align: center;
     font-size: 2rem;
@@ -65,7 +70,7 @@ body{
 .icon{
     margin-top: 2%;
     height:75%;
-    width: 30%;
+    width: 50%;
 }
 .picture{
     height: 100%;
@@ -85,8 +90,22 @@ body{
 .score-title{
     text-align: center;
     font-size: 2rem;
+    padding-left: 5%;
 }
 .all-scores{
     display: flex;
     justify-content: space-around;
+}
+.reset-btn{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+    margin: 8% 0 0 38%;
+    padding: 3% 3% 3% 3%;
+    cursor:pointer;
+}
+.win-message{
+    font-size: 2rem;
+    text-align: center;
+    padding: 35% 0 0 0;
 }

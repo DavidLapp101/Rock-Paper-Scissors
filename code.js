@@ -53,8 +53,8 @@ function displayWinner() {
         winnerMessage = "You Lose!";
     }
 
-    $(".winner-message").html(`<p>${winnerMessage}</p>
-    <button onclick="cleanUp()">RESET</button>`);
+    $(".winner-message").html(`<p class="win-message">${winnerMessage}</p>
+    <button class="reset-btn" onclick="cleanUp()">RESET</button>`);
 }
 
 function cleanUp() {
