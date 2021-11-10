@@ -9,7 +9,7 @@ var playerSide = $(".player-choice .icon");
 var aiSide = $(".comp-choice .icon");
 
 function chooseHand(choice) {
-    playerSide.html(`<img src="images/${choice}.png" alt="">`);
+    playerSide.html(`<img src="images/${choice}.png" alt="" class="picture">`);
     playerOption = choice;
     
     aiChoice();
@@ -19,15 +19,15 @@ function aiChoice() {
     let random = Math.random() * 3;
 
     if(random > 2) {
-        aiSide.html(`<img src="images/rock.png" alt="">`);
+        aiSide.html(`<img src="images/rock.png" alt="" class="picture">`);
         aiOption = 'rock';
     }
     else if(random > 1) {
-        aiSide.html(`<img src="images/paper.png" alt="">`);
+        aiSide.html(`<img src="images/paper.png" alt="" class="picture">`);
         aiOption = 'paper';
     }
     else {
-        aiSide.html(`<img src="images/scissors.png" alt="">`);
+        aiSide.html(`<img src="images/scissors.png" alt="" class="picture">`);
         aiOption = 'scissors';
     }
 
