@@ -38,18 +38,27 @@ function displayWinner() {
     if(playerOption == aiOption) {
         tieScore++;
         $(".tie-score").html(tieScore);
-        alert("It's a tie!");
+        winnerMessage = "It's a tie!";
     }
     else if((playerOption == 'rock' && aiOption == 'scissors') ||
     (playerOption == 'paper' && aiOption == 'rock') ||
     (playerOption == 'scissors' && aiOption == 'paper')) {
         playerScore++;
         $(".player-score").html(playerScore);
-        alert("You Win!");
+        winnerMessage = "You Win!";
     }
     else {
         aiScore++;
         $(".ai-score").html(aiScore);
-        alert("You Lose!");
+        winnerMessage = "You Lose!";
     }
+
+    $(".winner-message").html(`<p>${winnerMessage}</p>
+    <button onclick="cleanUp()">RESET</button>`);
+}
+
+function cleanUp() {
+    playerSide.empty();
+    aiSide.empty();
+    $(".winner-message").empty();
 }
