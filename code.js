@@ -58,7 +58,5 @@ function displayWinner() {
 }
 
 function cleanUp() {
-    playerSide.empty();
-    aiSide.empty();
-    $(".winner-message").empty();
+    location.reload();
 }
